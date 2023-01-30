@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- <link rel="icon" href="img/favicon-resized.png" />
+
+    <link rel="apple-touch-icon" href="img/favicon-iOS-180.png" />
+
+    <link rel="manifest" href="manifest.webmanifest" /> -->
+    <meta
+      name="description"
+      content="Maja's portfolio is portfolio in form of a website. Showcases various projects, that could be viewed. It's developed using HTML, CSS and JavaScript technologies. "
+    />
+
+    <title>Maja's portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="queries.css" />
+
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <a class="logo" href="#">Portfolio</a>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="#">Home</a></li>
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#skills">Skills</a></li>
+          <li><a class="nav-link" href="#projects">Projects</a></li>
+          <li><a class="nav-link" href="#cta">Contact</a></li>
+          <li>
+            <a
+              class="nav-link nav-cta"
+              href="Maja's CV.pdf"
+              download="Maja's CV"
+              >Download CV</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <button class="btn-mob-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+    </header>
+    <main>
+      <!-- SECTION HOME/////////////////////// -->
+      <section class="section-home" id="home">
+        <div class="home-text">
+          <div>
+            <p class="hello">Hello,</p>
+            <p class="intro">I'm Maja Stojanovic</p>
+            <p class="position">Junior front-end developer</p>
+          </div>
+          <ul class="profiles-list">
+            <li class="li-logo">
+              <a
+                class="profile-link"
+                href="https://rs.linkedin.com/in/maja-stojanovic-a24610176"
+                target="_blank"
+                ><ion-icon
+                  name="logo-linkedin"
+                  class="ion-icon"
+                  title="LinkedIn"
+                ></ion-icon
+              ></a>
+            </li>
+            <li class="li-logo">
+              <a
+                class="profile-link"
+                href="https://github.com/maja4s91"
+                target="_blank"
+                ><ion-icon name="logo-github" class="ion-icon"></ion-icon
+              ></a>
+            </li>
+            <li class="li-logo">
+              <a
+                class="profile-link"
+                href="https://join.skype.com/invite/inLQhtFlPSdH"
+                target="_blank"
+                ><ion-icon name="logo-skype" class="ion-icon"></ion-icon
+              ></a>
+            </li>
+          </ul>
+          <a class="about-me" href="#about">About me&nbsp;🠗</a>
+        </div>
+        <picture class="home-img">
+          <source srcset="img/Maja-Home.webp" type="image/webp" />
+          <source srcset="img/Maja-Home.png" type="image/png" />
+          <img class="home-img" src="img/Maja-Home.png" alt="Maja's profile" />
+        </picture>
+      </section>
+
+      <!-- SECTION ABOUT ME/////////////// -->
+      <section class="section-about" id="about">
+        <h2 class="heading-primary">About</h2>
+        <picture class="about-img">
+          <source srcset="img/Maja-About.webp" type="image/webp" />
+          <source srcset="img/Maja-About.png" type="image/png" />
+          <img src="img/Maja-About.png" alt="Maja's image" class="about-img" />
+        </picture>
+
+        <div class="about-text">
+          <div class="text-icon">
+            <p class="aboutme-text">
+              I’m a junior front-end developer, who has successfully completed
+              two courses for web development and have a strong background in
+              the IT industry. I’ve previously worked as a technical recruiter
+              and HR manager in two different IT companies. Over the last year,
+              I’ve been actively studying and learning web development by taking
+              two courses in JavaScript, HTML, and CSS. So far, I’ve developed
+              several projects on my own, including this portfolio and it has
+              been more than a thrilling journey for me. I am passionate about
+              web development, and I am seeking opportunities to build up my
+              career and gain more experience in this field. My enthusiasm for
+              this field combined with my prior experience has enabled me to
+              gain a unique skill set that can be effectively put into use while
+              working as a junior front-end developer. I am highly organized and
+              possess excellent communication skills.
+            </p>
+            <ul class="aboutme-icons">
+              <li class="aboutme-icon">
+                <ion-icon
+                  class="ion-icon about-ion-icon"
+                  name="code-outline"
+                ></ion-icon>
+                <h3 class="heading-tertiary">Code</h3>
+                <p class="icon-text">Love coding and learning</p>
+              </li>
+              <li class="aboutme-icon">
+                <ion-icon
+                  class="ion-icon about-ion-icon"
+                  name="chatbubbles-outline"
+                ></ion-icon>
+                <h3 class="heading-tertiary">Teamwork</h3>
+                <p class="icon-text">Love working in teams</p>
+              </li>
+              <li class="aboutme-icon">
+                <ion-icon
+                  class="ion-icon about-ion-icon"
+                  name="share-social-outline"
+                ></ion-icon>
+                <h3 class="heading-tertiary">Share</h3>
+                <p class="icon-text">Love sharing my knowladge</p>
+              </li>
+              <li class="aboutme-icon">
+                <ion-icon
+                  class="ion-icon about-ion-icon"
+                  name="camera-outline"
+                ></ion-icon>
+                <h3 class="heading-tertiary">Photo</h3>
+                <p class="icon-text">Love taking photos</p>
+              </li>
+            </ul>
+          </div>
+          <a class="about-cta" href="Maja's CV.pdf" download="Maja's CV"
+            >Download CV</a
+          >
+        </div>
+      </section>
+
+      <!-- SECTION SKILLS ///////////////////// -->
+      <section class="section-skills" id="skills">
+        <h2 class="heading-primary">Skills</h2>
+        <ul class="skills-container">
+          <li class="skills-list">
+            <ion-icon
+              class="ion-icon skills-ion-icon"
+              name="logo-html5"
+            ></ion-icon>
+            <h3 class="heading-tertiary h-skills">HTML</h3>
+          </li>
+          <li class="skills-list">
+            <ion-icon
+              class="ion-icon skills-ion-icon"
+              name="logo-css3"
+            ></ion-icon>
+            <h3 class="heading-tertiary h-skills">CSS</h3>
+          </li>
+          <li class="skills-list">
+            <ion-icon
+              class="ion-icon skills-ion-icon"
+              name="logo-javascript"
+            ></ion-icon>
+            <h3 class="heading-tertiary h-skills">JavaScript</h3>
+          </li>
+          <li class="skills-list">
+            <ion-icon
+              class="ion-icon skills-ion-icon"
+              name="logo-github"
+            ></ion-icon>
+            <h3 class="heading-tertiary h-skills">GitHub</h3>
+          </li>
+          <li class="skills-list">
+            <ion-icon
+              class="ion-icon skills-ion-icon"
+              name="person-outline"
+            ></ion-icon>
+            <h3 class="heading-tertiary h-skills">Creativity skills</h3>
+          </li>
+          <li class="skills-list">
+            <ion-icon
+              class="ion-icon skills-ion-icon"
+              name="chatbubbles-outline"
+            ></ion-icon>
+            <h3 class="heading-tertiary h-skills">Team player</h3>
+          </li>
+        </ul>
+      </section>
+
+      <!-- PROJECTS -->
+
+      <section class="section-projects" id="projects">
+        <h2 class="heading-primary">Projects</h2>
+        <picture class="project-img">
+          <source srcset="img/Forkify-img.webp" type="image/webp" />
+          <source srcset="img/Forkify-img.png" type="image/png" />
+          <img
+            src="img/Forkify-img.png"
+            alt="Forkify project"
+            class="project-img"
+          />
+        </picture>
+
+        <div class="text-box">
+          <h3 class="heading-tertiary">Forkify</h3>
+          <p class="aboutme-text project-text">
+            The recipe application with custom recipe uploads.
+          </p>
+          <a
+            class="about-cta"
+            href="https://forkify-maja.netlify.app"
+            target="_blank"
+            >View project&nbsp;&nbsp;➔</a
+          >
+        </div>
+
+        <div class="text-box">
+          <h3 class="heading-tertiary">Omnifood</h3>
+          <p class="aboutme-text project-text">
+            The responsive website template for creating a custom, well-being
+            and individual weekly meal plan.
+          </p>
+          <a
+            class="about-cta"
+            href="https://omnifood-maja.netlify.app/"
+            target="_blank"
+            >View project&nbsp;&nbsp;➔</a
+          >
+        </div>
+        <picture class="project-img">
+          <source srcset="img/Omnifood-img.webp" type="image/webp" />
+          <source srcset="img/Omnifood-img.png" type="image/png" />
+          <img
+            src="img/Omnifood-img.png"
+            alt="Omnifood project"
+            class="project-img"
+          />
+        </picture>
+
+        <picture class="project-img">
+          <source srcset="img/Advice-generator.webp" type="image/webp" />
+          <source srcset="img/Advice-generator.png" type="image/png" />
+          <img
+            src="img/Advice-generator.webp"
+            alt="Advice generator project"
+            class="project-img"
+          />
+        </picture>
+
+        <div class="text-box">
+          <h3 class="heading-tertiary">Advice generator</h3>
+          <p class="aboutme-text project-text">
+            The application generates a new piece of advice simply by clicking
+            the dice icon.
+          </p>
+          <a
+            class="about-cta"
+            href="https://advicegeneratorapp-maja.netlify.app/"
+            target="_blank"
+            >View project&nbsp;&nbsp;➔</a
+          >
+        </div>
+
+        <div class="text-box">
+          <h3 class="heading-tertiary">QR code</h3>
+          <p class="aboutme-text project-text">
+            The responsive QR code component.
+          </p>
+          <a
+            class="about-cta"
+            href="https://qrcode-maja.netlify.app/"
+            target="_blank"
+            >View project&nbsp;&nbsp;➔</a
+          >
+        </div>
+
+        <picture class="project-img">
+          <source srcset="img/QR-code.webp" type="image/webp" />
+          <source srcset="img/QR-code.png" type="image/png" />
+          <img
+            src="img/QR-code.png"
+            alt="QR code project"
+            class="project-img"
+          />
+        </picture>
+
+        <a
+          class="about-cta projects-view"
+          href="https://github.com/maja4s91"
+          target="_blank"
+          >View all projects&nbsp;&nbsp;➔</a
+        >
+      </section>
+
+      <!-- CONTACT //////////////////////////////////// -->
+      <section class="section-contact" id="cta">
+        <h2 class="heading-primary">Contact</h2>
+        <form class="form-box">
+          <address class="contacts-box">
+            <p class="contact-intro">Let's talk about everything!</p>
+
+            <div class="contact">
+              <p class="contact-locat">
+                <ion-icon name="pin-outline" class="contact-icon"></ion-icon>
+                Bilecka 65, Belgrade
+              </p>
+              <p class="contact-email">
+                <ion-icon name="mail-outline" class="contact-icon"></ion-icon>
+                majastojanovic4@gmail.com
+              </p>
+              <p class="contact-mob">
+                <ion-icon name="call-outline" class="contact-icon"></ion-icon>
+                +381695666301
+              </p>
+              <ul class="profiles-list contact-li">
+                <li class="li-logo">
+                  <a
+                    class="profile-link"
+                    href="https://rs.linkedin.com/in/maja-stojanovic-a24610176"
+                    target="_blank"
+                    ><ion-icon name="logo-linkedin" class="ion-icon"></ion-icon
+                  ></a>
+                </li>
+                <li class="li-logo">
+                  <a
+                    class="profile-link"
+                    href="https://github.com/maja4s91"
+                    target="_blank"
+                    ><ion-icon name="logo-github" class="ion-icon"></ion-icon
+                  ></a>
+                </li>
+                <li class="li-logo">
+                  <a
+                    class="profile-link"
+                    href="https://join.skype.com/invite/inLQhtFlPSdH"
+                    target="_blank"
+                    ><ion-icon name="logo-skype" class="ion-icon"></ion-icon
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </address>
+
+          <div class="form contact-form" name="sign-up" netlify>
+            <label for="email">
+              <input
+                type="text"
+                name="email"
+                id="email"
+                placeholder="Email*"
+                required
+              />
+            </label>
+            <label for="name">
+              <input type="text" name="name" id="name" placeholder="Subject" />
+            </label>
+            <label for="message">
+              <textarea
+                name="message"
+                id="message"
+                placeholder="Message*"
+                rows="3"
+                required
+              ></textarea>
+            </label>
+            <button class="btn-contact">Send message</button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <p class="copyright">&copy 2023 Made with heart by Maja Stojanovic</p>
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

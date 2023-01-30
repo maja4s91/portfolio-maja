@@ -1,0 +1,434 @@
+/* BELOW 1328px (Smaller desktop) */
+/* ****************** */
+@media (max-width: 93.5em) {
+  .intro {
+    font-size: 5.4rem;
+  }
+  .position {
+    font-size: 2.4rem;
+  }
+
+  .section-projects {
+    max-width: 110rem;
+  }
+  .project-img {
+    width: 50rem;
+    height: 25rem;
+  }
+}
+
+/* BELOW 1284px (Smaller desktop)
+/* ****************** */
+@media (max-width: 80.25em) {
+  /* bellow we converted 1rem=9px insted of 10px
+    (9px/16px=0.5625=56.25%) */
+
+  html {
+    font-size: 56.25%;
+  }
+  .section-home {
+    padding-top: 3.1rem;
+  }
+
+  .intro {
+    font-size: 4.7rem;
+  }
+  .position {
+    font-size: 1.7rem;
+  }
+  .section-about {
+    max-width: 110rem;
+  }
+  .about-text {
+    gap: 4rem;
+  }
+  .text-icon {
+    gap: 2rem;
+  }
+  .icon-text {
+    font-size: 0.9rem;
+  }
+  .section-skills {
+    max-width: 110rem;
+  }
+  .section-contact {
+    max-width: 110rem;
+  }
+}
+
+/* BELOW 1035px (Smaller desktop) */
+/* ****************** */
+@media (max-width: 64.68em) {
+  html {
+    font-size: 50%;
+  }
+  .home-img {
+    height: 69.5rem;
+    width: 67.2rem;
+  }
+  .intro {
+    font-size: 4.3rem;
+  }
+  .position {
+    font-size: 1.9rem;
+  }
+  .footer {
+    max-width: 110rem;
+  }
+}
+
+/* BELOW 958px (Smaller desktop) */
+/* ****************** */
+
+@media (max-width: 59.875em) {
+  /* MOBILE NAV */
+  .btn-mob-nav {
+    display: block;
+    z-index: 9999999;
+  }
+
+  .nav {
+    background-color: #f0f9ff;
+    /* -webkit-backdrop-filter: blur(5px); */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+  .nav-open .nav {
+    opacity: 1;
+
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+    z-index: 99999;
+  }
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .nav-link:link,
+  .nav-link:visited {
+    font-size: 3rem;
+  }
+
+  /* ////// */
+  .section-home {
+    padding-top: 8.2rem;
+  }
+  .home-text {
+    margin-left: 3rem;
+  }
+  .hello {
+    font-size: 1.8;
+  }
+  .intro {
+    font-size: 2.3rem;
+  }
+  .position {
+    font-size: 1.4rem;
+  }
+
+  .section-about {
+    max-width: 85rem;
+    margin: 0 3.5rem;
+  }
+  .aboutme-icons {
+    justify-content: center;
+    gap: 4.5rem;
+  }
+
+  .about-text {
+    gap: 2rem;
+  }
+
+  .about-img {
+    height: 37rem;
+    width: 37rem;
+  }
+  .about-cta:link,
+  .about-cta:visited {
+    font-size: 1.4rem;
+    padding: 1rem 2.2rem;
+  }
+  .text-icon {
+    gap: 0.5rem;
+  }
+  .icon-text {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  .aboutme-text {
+    line-height: 1.2;
+  }
+  .aboutme-icons {
+    gap: 1.5rem;
+  }
+  .section-projects {
+    gap: 2rem;
+    max-width: 85rem;
+    margin: 0 3.5rem;
+  }
+
+  .text-box {
+    gap: 0.5rem;
+  }
+  .project-img {
+    width: 42rem;
+    height: 25rem;
+  }
+  .section-skills,
+  .footer {
+    max-width: 85rem;
+  }
+  .section-contact {
+    max-width: 85rem;
+  }
+  .contact-intro {
+    font-size: 2.2rem;
+  }
+}
+
+/* BELOW 758px (Smaller desktop) */
+/* ****************** */
+
+@media (max-width: 47.375em) {
+  body {
+    justify-content: center;
+  }
+  .section-home {
+    grid-template-columns: 1fr;
+    padding-top: 2rem;
+    justify-content: center;
+    margin-left: 5rem;
+  }
+
+  .home-img {
+    height: 48.5rem;
+    width: 48.2rem;
+  }
+  .section-about {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    row-gap: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .text-box {
+    align-items: center;
+  }
+
+  .about-img {
+    justify-self: center;
+    height: 35rem;
+    width: 35rem;
+  }
+
+  .about-cta:link,
+  .about-cta:visited {
+    align-self: center;
+  }
+
+  .section-projects {
+    grid-template-columns: 1fr;
+    gap: 5rem;
+
+    justify-content: center;
+    align-items: center;
+    max-width: 70rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .project-img {
+    justify-self: center;
+    align-self: center;
+  }
+
+  .project-text {
+    text-align: center;
+  }
+  .projects-view {
+    grid-column: auto;
+  }
+
+  .project-img:nth-of-type(1) {
+    order: 1;
+  }
+  .text-box:nth-of-type(1) {
+    order: 2;
+  }
+  .project-img:nth-of-type(2) {
+    order: 3;
+  }
+  .text-box:nth-of-type(2) {
+    order: 4;
+  }
+  .project-img:nth-of-type(3) {
+    order: 5;
+  }
+  .text-box:nth-of-type(3) {
+    order: 6;
+  }
+
+  .project-img:nth-of-type(4) {
+    order: 7;
+  }
+  .text-box:nth-of-type(4) {
+    order: 8;
+  }
+
+  .projects-view {
+    order: 9;
+  }
+
+  .section-skills,
+  .section-about,
+  .section-contact,
+  .footer {
+    max-width: 70rem;
+    /* margin-left: 12rem; */
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .form-box {
+    grid-template-columns: 1fr;
+    gap: 15rem;
+  }
+
+  .contact-intro {
+    font-size: 3.5rem;
+  }
+
+  .contact {
+    align-items: center;
+  }
+
+  .contact-li {
+    align-self: center;
+  }
+  .contact-email,
+  .contact-mob,
+  .contact-locat {
+    font-size: 1.8rem;
+  }
+}
+
+/* BELOW 610px (Smaller desktop) */
+/* ****************** */
+
+@media (max-width: 38.125em) {
+  .section-home {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .home-text {
+    gap: 3rem;
+  }
+
+  .hello {
+    font-size: 2.8rem;
+    color: #757770;
+  }
+  .intro {
+    font-size: 3.6rem;
+  }
+  .position {
+    font-size: 2rem;
+    color: #339af0;
+  }
+  .about-me:link,
+  .about-me:visited {
+    font-size: 2rem;
+    padding: 0.6rem 1.2rem;
+  }
+
+  .home-img {
+    height: 45rem;
+    width: 35rem;
+  }
+
+  .section-about {
+    max-width: 43rem;
+  }
+  .about-text {
+    gap: 3.5rem;
+  }
+  .aboutme-text {
+    font-size: 1.8rem;
+    padding-bottom: 2rem;
+  }
+  .icon-text {
+    font-size: 1.5;
+    text-align: center;
+  }
+
+  .about-cta:link,
+  .about-cta:visited {
+    padding: 1.6rem 2.8rem;
+    font-size: 2rem;
+  }
+
+  .section-skills,
+  .section-contact {
+    max-width: 43rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .skills-container {
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+  }
+
+  .skills-ion-icon {
+    font-size: 6rem;
+  }
+
+  .h-skills {
+    font-size: 1.2rem;
+  }
+  .section-projects {
+    max-width: 43rem;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 6rem;
+  }
+
+  .text-box a:link,
+  .text-box a:visited {
+    padding: 1.2rem 2.4rem;
+    font-size: 1.5rem;
+  }
+
+  .contact-intro {
+    font-size: 2.6rem;
+  }
+
+  .form-box {
+    gap: 9rem;
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "portfolio-maja",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maja4s91/portfolio-maja.git"
+  },
+  "author": "Maja Stojanovic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maja4s91/portfolio-maja/issues"
+  },
+  "homepage": "https://github.com/maja4s91/portfolio-maja#readme",
+  "dependencies": {
+    "parcel": "^2.8.3"
+  },
+  "devDependencies": {
+    "@parcel/transformer-webmanifest": "^2.8.3"
+  }
+}

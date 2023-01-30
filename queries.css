@@ -88,8 +88,8 @@
   }
 
   .nav {
-    background-color: #f0f9ff;
-    /* -webkit-backdrop-filter: blur(5px); */
+    background-color: var(--Light-Blue);
+    -webkit-backdrop-filter: blur(5px);
     position: absolute;
     top: 0;
     left: 0;

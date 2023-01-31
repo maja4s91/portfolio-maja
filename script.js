@@ -10,7 +10,7 @@ btnNavEl.addEventListener("click", function () {
 const allLinks = document.querySelectorAll("a:link");
 
 allLinks.forEach(function (link) {
-  if (link.className === "nav-link nav-cta" || link.className === "about-cta")
+  if (link.className === "nav-cta nav-link" || link.className === "about-cta")
     return;
 
   link.addEventListener("click", (e) => {

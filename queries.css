@@ -1,4 +1,4 @@
-/* BELOW 1328px (Smaller desktop) */
+/* BELOW 1328px (Large ) */
 /* ****************** */
 @media (max-width: 93.5em) {
   .intro {
@@ -17,7 +17,7 @@
   }
 }
 
-/* BELOW 1284px (Smaller desktop)
+/* BELOW 1284px (Large desktop)
 /* ****************** */
 @media (max-width: 80.25em) {
   /* bellow we converted 1rem=9px insted of 10px
@@ -77,7 +77,7 @@
   }
 }
 
-/* BELOW 958px (Smaller desktop) */
+/* BELOW 958px (Laptops) */
 /* ****************** */
 
 @media (max-width: 59.875em) {
@@ -210,7 +210,7 @@
   }
 }
 
-/* BELOW 758px (Smaller desktop) */
+/* BELOW 758px (Tablets) */
 /* ****************** */
 
 @media (max-width: 47.375em) {
@@ -337,7 +337,7 @@
   }
 }
 
-/* BELOW 610px (Smaller desktop) */
+/* BELOW 610px (Mob) */
 /* ****************** */
 
 @media (max-width: 38.125em) {
@@ -373,12 +373,15 @@
 
   .section-about {
     max-width: 43rem;
+    margin-left: auto;
+    margin-right: auto;
   }
   .about-text {
     gap: 3.5rem;
   }
+
   .aboutme-text {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     padding-bottom: 2rem;
   }
   .icon-text {
@@ -386,6 +389,22 @@
     text-align: center;
   }
 
+  .about-img {
+    justify-self: center;
+    height: 40rem;
+    width: 40rem;
+  }
+
+  .aboutme-icons {
+    gap: 3rem;
+  }
+
+  .icon-text {
+    font-size: 0.9rem;
+  }
+  .about-ion-icon {
+    font-size: 3rem;
+  }
   .about-cta:link,
   .about-cta:visited {
     padding: 1.6rem 2.8rem;
@@ -405,11 +424,11 @@
   }
 
   .skills-ion-icon {
-    font-size: 6rem;
+    font-size: 4.5rem;
   }
 
   .h-skills {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   .section-projects {
     max-width: 43rem;
